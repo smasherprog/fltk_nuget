@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>FLTK</id>
-    <version>1.3.3.0</version>
+    <id>fltk</id>
+    <version>1.3.3.2</version>
     <authors>Scott Lee</authors>
     <owners>Scott Lee</owners>
     <licenseUrl>http://www.fltk.org/COPYING.php</licenseUrl>
@@ -14,7 +14,7 @@
 
     <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright 2015</copyright>
-    <tags>FLTK native C++ v120 windesktop dyn rt-dyn msvcstl static v140</tags>
+    <tags>FLTK native C++ v120 v140 windesktop dyn rt-dyn msvcstl static </tags>
     <dependencies>
     </dependencies>
   </metadata>
