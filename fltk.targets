@@ -1,0 +1,31 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(PlatformToolset)' == 'v120' And ('$(Platform)' == 'Win32' Or '$(Platform)' == 'x86') ">
+    <Link>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Debug'">$(MSBuildThisFileDirectory)..\..\lib\native\v120\windesktop\msvcstl\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Release'">$(MSBuildThisFileDirectory)..\..\lib\native\v120\windesktop\msvcstl\Win32\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(PlatformToolset)' == 'v120' And '$(Platform)' == 'x64'">
+    <Link>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Debug'">$(MSBuildThisFileDirectory)..\..\lib\native\v120\windesktop\msvcstl\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Release'">$(MSBuildThisFileDirectory)..\..\lib\native\v120\windesktop\msvcstl\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(PlatformToolset)' == 'v140' And ('$(Platform)' == 'Win32' Or '$(Platform)' == 'x86') ">
+    <Link>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Debug'">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\Win32\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Release'">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\Win32\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(PlatformToolset)' == 'v140' And '$(Platform)' == 'x64'">
+    <Link>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Debug'">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)' == 'Release'">$(MSBuildThisFileDirectory)..\..\lib\native\v140\windesktop\msvcstl\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>
