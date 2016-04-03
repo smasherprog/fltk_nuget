@@ -3,12 +3,13 @@ SET v2=%~2
 SET v3=%~3
 SET v4=%~4
 
-if exist "C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild.exe" (
-	set msbuild="C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild.exe"
-)
 if exist "C:/Program Files (x86)/MSBuild/12.0/Bin/msbuild.exe" (
 	set msbuild="C:/Program Files (x86)/MSBuild/12.0/Bin/msbuild.exe"
 )
+if exist "C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild.exe" (
+	set msbuild="C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild.exe"
+)
+
 
 call cd "%v1%"
 call cmake -G "%v2%" -D OPTION_BUILD_EXAMPLES=FALSE "%v3%/%v1%/"
