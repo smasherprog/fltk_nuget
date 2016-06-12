@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngget.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngrio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngmem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngrtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngtrans.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngwtran.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngerror.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngpread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngrutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\png\pngwio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C2785A34-DE94-3935-A162-641B02DD570B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Static|Win32">
+      <Configuration>Debug_Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Static|x64">
+      <Configuration>Debug_Static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Static|Win32">
+      <Configuration>Release_Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Static|x64">
+      <Configuration>Release_Static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AB31B4D3-F2BC-3029-9F66-40C8562B6D0C}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>fltk</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">$(SolutionDir)lib\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">$(ProjectName)</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FL_LIBRARY;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)zlib;$(SolutionDir)jpeg;$(SolutionDir)png;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Adjuster.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Bitmap.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Browser.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Browser_.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Browser_load.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Box.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Button.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Chart.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Check_Browser.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Check_Button.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Choice.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Clock.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Color_Chooser.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Copy_Surface.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Counter.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Device.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Dial.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Help_Dialog_Dox.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Double_Window.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_File_Browser.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_File_Chooser.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_File_Chooser2.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_File_Icon.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_File_Input.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Group.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Help_View.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Image_Surface.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Input.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Input_.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Light_Button.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Menu.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Menu_.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Menu_Bar.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Menu_Button.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Menu_Window.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Menu_add.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Menu_global.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Multi_Label.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Native_File_Chooser.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Overlay_Window.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Pack.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Paged_Device.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Pixmap.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Positioner.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_PostScript.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Printer.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Preferences.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Progress.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Repeat_Button.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Return_Button.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Roller.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Round_Button.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Scroll.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Scrollbar.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Shared_Image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Single_Window.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Slider.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Table.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Table_Row.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tabs.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Text_Buffer.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Text_Display.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Text_Editor.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tile.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tiled_Image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tooltip.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tree.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tree_Item_Array.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tree_Item.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Tree_Prefs.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Valuator.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Value_Input.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Value_Output.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Value_Slider.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Widget.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Window.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Window_fullscreen.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Window_hotspot.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Window_iconize.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Window_shape.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Wizard.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_XBM_Image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_XPM_Image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_abort.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_add_idle.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_arg.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_compose.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_display.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_get_key.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_get_system_colors.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_grab.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_lock.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_own_colormap.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_visual.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_x.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\filename_absolute.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\filename_expand.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\filename_ext.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\filename_isdir.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\filename_list.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\filename_match.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\filename_setext.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_arc.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_arci.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_ask.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_boxtype.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_color.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_cursor.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_curve.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_diamond_box.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_dnd.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_draw.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_draw_image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_draw_pixmap.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_engraved_label.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_file_dir.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_font.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_gleam.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_gtk.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_labeltype.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_line_style.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_open_uri.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_oval_box.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_overlay.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_overlay_visual.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_plastic.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_read_image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_rect.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_round_box.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_rounded_box.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_set_font.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_set_fonts.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_scroll_area.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_shadow_box.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_shortcut.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_show_colormap.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_symbols.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_vertex.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\ps_image.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\screen_xywh.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_utf8.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_encoding_latin1.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_encoding_mac_roman.cxx" />
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\flstring.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\scandir.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\numericsort.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\vsnprintf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\xutf8\is_right2left.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\xutf8\is_spacing.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\xutf8\case.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\xutf8\utf8Input.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\xutf8\utf8Utils.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\xutf8\utf8Wrap.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\xutf8\keysym2Ucs.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_utf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\fl_call_main.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug_Static|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release_Static|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

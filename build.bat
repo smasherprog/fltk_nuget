@@ -11,5 +11,5 @@ set infilename=%filename:-source=%
 call xcopy "%var%\%filename%\%infilename%\FL" fltk\build\native\include\FL\ /E /H /K /y
 call xcopy "%var%\%filename%\%infilename%\GL" fltk\build\native\include\GL\ /E /H /K /y
 
-start cmd.exe /k "build_v120.bat
-start cmd.exe /k "build_v140.bat
+start cmd.exe /k "build_v120.bat"
+start cmd.exe /k "build_v140.bat"

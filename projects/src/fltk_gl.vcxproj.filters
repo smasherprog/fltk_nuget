@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Gl_Choice.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Gl_Device_Plugin.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Gl_Overlay.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\Fl_Gl_Window.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\freeglut_geometry.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\freeglut_stroke_mono_roman.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\freeglut_stroke_roman.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\freeglut_teapot.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\gl_draw.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\gl_start.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\glut_compatability.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\glut_font.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C2785A34-DE94-3935-A162-641B02DD570B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

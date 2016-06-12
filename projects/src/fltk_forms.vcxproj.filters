@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\forms_compatability.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\forms_bitmap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\forms_free.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\forms_fselect.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\forms_pixmap.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\scott\Documents\GitHub\fltk_nuget\fltk-src-32-VS2015\src\forms_timer.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C2785A34-DE94-3935-A162-641B02DD570B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
