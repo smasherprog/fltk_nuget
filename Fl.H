@@ -29,23 +29,52 @@
 # define WIN32
 #endif
 
-#if defined _DLL 
-#pragma comment(lib, "md/fltk") 
-#pragma comment(lib, "md/fltk_forms") 
-#pragma comment(lib, "md/fltk_gl") 
-#pragma comment(lib, "md/fltk_images") 
-#pragma comment(lib, "md/fltk_jpeg") 
-#pragma comment(lib, "md/fltk_png") 
-#pragma comment(lib, "md/fltk_z") 
-#elif defined _MT 
-#pragma comment(lib, "mt/fltk") 
-#pragma comment(lib, "mt/fltk_forms") 
-#pragma comment(lib, "mt/fltk_gl") 
-#pragma comment(lib, "mt/fltk_images") 
-#pragma comment(lib, "mt/fltk_jpeg") 
-#pragma comment(lib, "mt/fltk_png") 
-#pragma comment(lib, "mt/fltk_z") 
-#endif 
+#if defined(DEBUG)  || defined(_DEBUG) || !defined(NDEBUG)
+
+	#if defined _DLL 
+	#pragma comment(lib, "md/fltkd") 
+	#pragma comment(lib, "md/fltk_formsd") 
+	#pragma comment(lib, "md/fltk_gld") 
+	#pragma comment(lib, "md/fltk_imagesd") 
+	#pragma comment(lib, "md/fltk_jpegd") 
+	#pragma comment(lib, "md/fltk_pngd") 
+	#pragma comment(lib, "md/fltk_zd") 
+
+	#elif defined _MT 
+
+	#pragma comment(lib, "mt/fltkd") 
+	#pragma comment(lib, "mt/fltk_formsd") 
+	#pragma comment(lib, "mt/fltk_gld") 
+	#pragma comment(lib, "mt/fltk_imagesd") 
+	#pragma comment(lib, "mt/fltk_jpegd") 
+	#pragma comment(lib, "mt/fltk_pngd") 
+	#pragma comment(lib, "mt/fltk_zd") 
+	#endif 
+
+
+#else 
+	#if defined _DLL 
+	#pragma comment(lib, "md/fltk") 
+	#pragma comment(lib, "md/fltk_forms") 
+	#pragma comment(lib, "md/fltk_gl") 
+	#pragma comment(lib, "md/fltk_images") 
+	#pragma comment(lib, "md/fltk_jpeg") 
+	#pragma comment(lib, "md/fltk_png") 
+	#pragma comment(lib, "md/fltk_z") 
+
+	#elif defined _MT 
+
+	#pragma comment(lib, "mt/fltk") 
+	#pragma comment(lib, "mt/fltk_forms") 
+	#pragma comment(lib, "mt/fltk_gl") 
+	#pragma comment(lib, "mt/fltk_images") 
+	#pragma comment(lib, "mt/fltk_jpeg") 
+	#pragma comment(lib, "mt/fltk_png") 
+	#pragma comment(lib, "mt/fltk_z") 
+	#endif 
+
+#endif
+
 
 
 #endif

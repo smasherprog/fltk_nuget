@@ -22,8 +22,14 @@ foreach($node in  $xml.Project.ItemDefinitionGroup)
         if ($node.ClCompile.RuntimeLibrary -ne $null) {
             $node.ClCompile.RuntimeLibrary = $runtimelib
         } else {
-            $newnode = $node.ClCompile.AppendChild($xml.CreateElement($runtimelib,$xml.DocumentElement.NamespaceURI))
+            $newnode = $node.ClCompile.AppendChild($xml.CreateElement('RuntimeLibrary',$xml.DocumentElement.NamespaceURI))
             $newnode.AppendChild($xml.CreateTextNode($runtimelib))
+        }
+		if ($node.ClCompile.TargetName -ne $null) {
+            $node.ClCompile.TargetName = '$(ProjectName)'
+        } else {
+            $newnode = $node.ClCompile.AppendChild($xml.CreateElement('TargetName',$xml.DocumentElement.NamespaceURI))
+            $newnode.AppendChild($xml.CreateTextNode('$(ProjectName)'))
         }
     }
 }
